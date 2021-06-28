@@ -1,3 +1,4 @@
 rootProject.name = "DogApiChip"
 include ':app'
 include ':domain'
+include ':data'
