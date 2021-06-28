@@ -4,6 +4,7 @@ import com.damixyz.data.source.DataSource
 import com.damixyz.domain.DogBreedImages
 import com.damixyz.domain.DogBreedList
 import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
 
 class DogBreedRepositoryImp @Inject constructor(private val dataSource: DataSource) :
@@ -16,7 +17,7 @@ class DogBreedRepositoryImp @Inject constructor(private val dataSource: DataSour
                 }
             )
 
-        }
+        }.subscribeOn(Schedulers.io())
     }
 
     override fun getBreedImages(breedName: String): Observable<DogBreedImages> {
@@ -24,7 +25,7 @@ class DogBreedRepositoryImp @Inject constructor(private val dataSource: DataSour
             DogBreedImages(
                 breedImages = response.message
             )
-        }
+        }.subscribeOn(Schedulers.io())
     }
 
 }
