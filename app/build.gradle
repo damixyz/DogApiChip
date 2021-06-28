@@ -22,7 +22,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", '"https://api.garage.me/"')
+            buildConfigField("String", "BASE_URL", '"https://dog.ceo/"')
         }
         release {
             minifyEnabled false

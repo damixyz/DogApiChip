@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DogApiChip</string>
+    <string name="retry">Retry</string>
 </resources>

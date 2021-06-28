@@ -14,5 +14,5 @@ sealed class ListScreenState : ScreenState() {
 }
 
 sealed class ImageScreenState : ScreenState() {
-    data class Content(val payload: DogBreedImages) : ListScreenState()
+    data class Content(val payload: DogBreedImages) : ImageScreenState()
 }
