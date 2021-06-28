@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="DogApiChip.app" target="11" />
       <module name="DogApiChip.data" target="1.8" />
+      <module name="DogApiChip.usecases" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
